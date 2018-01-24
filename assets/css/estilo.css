@@ -1,0 +1,198 @@
+#Topo{
+    background-color: #4682B4;
+
+}
+#Topo img{
+    width: 60%;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+#Avi img{
+
+    opacity: 0.85;
+}
+#Barra {
+    background-color: black;
+    padding: 3%;
+}
+
+#Barra p{
+    color: white;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+#Rodape{
+    background-color:#4682B4;
+    padding-top: 6%;
+    padding-bottom: 3%;
+}
+#Principal{
+
+    text-align: center;
+    background-color:mintcream ;
+
+}
+#PrincipalAdm{
+    padding: 10%;
+    background-color: #ececec ;
+}
+#Logo img{
+    width:100% ;
+    padding-top: 2%;
+}
+#textoame p{
+    font-size: 60%;
+}
+#paises{
+    background-color: #ececec;
+}
+.ui.button{
+    border-radius: 20px;
+
+}
+
+.ui.header{
+    text-align: center;
+}
+.caixa{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.ui.container{
+    text-align: center;
+}
+.imagem{
+
+    width: 100%;
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+.opaco{
+    opacity: 0.93;
+    margin-top:40%;
+}
+.bloco{
+    margin-left: 33%;
+}
+.corb{
+    color: #fff;
+}
+
+.imagem_header{
+    background-image:url(../img/avi.jpg) !important;
+}
+
+.superior{
+    position: relative;
+}
+
+
+.sobrepor{
+    position: absolute;
+    top:25%;
+    width: 100%;
+
+}
+.alinhamentol{
+    margin-left:20% ;
+    margin-right: 20%;
+
+}
+.alinhamentoC{
+    margin-left: 8%;
+}
+.alinhamentoR{
+    margin-top: -1%;
+}
+.emcima{
+    position: relative;
+}
+
+.embaixo{
+    position: absolute;
+}
+.sobreposto{
+    position: absolute !important;
+    top:0 !important;
+    background: #fff !important;
+    opacity:0.6;
+    width: 100%;
+    height: 100%;
+    color: #000 !important;
+    padding: 10%;
+    font-size: 250%;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 10%;
+
+}
+
+.sobreposto a{
+    color: #000;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    padding-top: 10%;
+}
+
+.sobreposto p{
+    margin-top: 15%;
+    font-family: "Arial Black";
+}
+.sem_margem .column, .sem_margem .column a, .sem_margem .row{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.texto{
+    text-align:justify ;
+    font-size: 100%;
+}
+.cart{
+    width: 100%;
+    display: inline-block;
+}
+
+.caixas{
+    position: relative;
+}
+.textoalin {
+    text-align: center;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+.usuario{
+    width: 40%;
+}
+.alinhamentoAdm{
+    margin-left: 40%;
+    font-size: 150%;
+}
+.textocard{
+    text-align: center;
+    font-size: 140%;
+    margin-top: -6px;
+    margin-bottom: -8px;
+}
+.margem{
+    margin-left: 5%;
+}
+
+
+/*responsividade*/
+@media (max-width:767px){
+    #Avi {
+        margin-bottom: 13px;
+        min-height: 280px;
+    }
+    #Avi img{
+        width: 190%;
+    }
+    #Barra{
+        margin-top: 13px;
+    }
+    #Barra{
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
+}
+
