@@ -24,62 +24,46 @@
 
 <!--Barra do topo la em cima -->
 
-<nav id="Topo">
-    <div class="ui secondary pointing big menu corb">
-
-        <div id="Logo" class="ui-text topo">
-
-            <a href="index.html">
-                <img src="../../assets/img/logo.png">
-            </a>
-
-        </div>
-
-        <div class="right menu">
-            <a class="ui item" href="cadastro.html">
-                <p class="corb">Cadastrar</p>
-            </a>
-            <a class="ui item" href="login.html">
-                <p class="corb">Entrar</p>
-            </a>
-        </div>
-    </div>
-
-</nav>
+<?php include ("adm/topo.php")?>
 
 <section id="paises">
 
-    <img class="imagem" src="../../assets/img/asia.jpg">
-
+    <img class="imagem" src="../../assets/img/europa.jpg">
 
     <div class="ui stackable grid">
         <div class="ui four wide column"></div>
         <div class="ui four wide column">
             <div class="ui segment">
-                <p class="texto">
-                    O continente asiático concentra as suas terras especialmente no hemisfério norte (ou seja, nas áreas
-                    setentrional e oriental).
-                    Seja em população ou em área, a Ásia se destaca como o maior entre os continentes.Devido a sua
-                    extensão, as diferenças climáticas
-                    no continente asiático também são bem expressivas. Clima siberiano, Clima de monções, Clima
-                    Mediterrâneo, Clima desértico.
-                    Os países com economia melhor desenvolvida no continente asiático são: Índia, Japão e China. O Japão
-                    é o país de economia mais bem
-                    consolidada (sendo esta industrializada desde a 2ª Guerra Mundial) enquanto a China é dona do
-                    segundo maior PIB do mundo.
-                </p>
+                <img class="imagem" src="../../assets/img/par.jpg">
+                <div class="ui divider"></div>
+                <h3 class="textoalin">Torre Eiffel - Paris - França</h3>
             </div>
         </div>
         <div class="ui four wide column">
             <div class="ui segment">
-                <img class="imagem" src="../../assets/img/china.jpg">
-                <div class="ui divider"></div>
-                <h3 class="textoalin">Cidade Proibida - Pequim - China</h3>
+                <p class="texto">
+                    O continente europeu possui uma grande abrangências em pontos turísticos, hotlaria e uma extrema
+                    heteronomia
+                    no quisito da gastronomia e em todos os outros tópicos citados. O continente denota de uma riqueza
+                    cultural
+                    extremamente marcante, possuindo uma dicotomia muito acentuada. No extremo norte do continente o
+                    clima é
+                    quase polar, ja no extremo sul, ele é mediterrâneo continental, possuindo sua vegetação, de acordo
+                    com a
+                    região e o clima que o possuem. No oeste do continente o clima é continental e no leste é frio de
+                    montanha.
+                    Portanto, o continente possue extremos muito acentuados que fazem com que o mesmo denote de uma
+                    riqueza extremamente
+                    alta. Todos esses aspectos tornam esse continente um alvo mais almejado dos viajantes, pois ele
+                    contém vários
+                    pontos que podem agradar qualquer tipo de turista.
+
+                </p>
             </div>
         </div>
         <div class="ui four wide column"></div>
-    </div>
 
+    </div>
     <br>
     <br>
     <br>
@@ -209,24 +193,7 @@
 </section>
 
 
-<section id="Rodape" class="ui section">
-    <div class="ui container">
-
-        <section class="ui section">
-
-            <h2 class="corb">Dúvidas, Reclamações ou Sugestões</h2>
-            <div class="ui divider"></div>
-            <p class="corb">Para uma experiência de maior qualiade, reporte-nos qualquer problema, duvida ou
-                sugestão</p>
-
-            <p><a class="corb" href="https://goo.gl/CfvNFW">contato.tw@tripwus.com</a></p>
-
-
-            <i class="huge mail icon"></i>
-        </section>
-
-    </div>
-</section>
+<?php include ("adm/rodape.php")?>
 
 
 </body>

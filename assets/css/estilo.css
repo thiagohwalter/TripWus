@@ -1,15 +1,11 @@
 #Topo{
-    background-color: #4682B4;
+    background-color: black;
 
 }
 #Topo img{
     width: 60%;
     margin-top: 2%;
     margin-left: 3%;
-}
-#Avi img{
-
-    opacity: 0.85;
 }
 #Barra {
     background-color: black;
@@ -21,7 +17,7 @@
     font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 #Rodape{
-    background-color:#4682B4;
+    background-color:Black;
     padding-top: 6%;
     padding-bottom: 3%;
 }
@@ -35,6 +31,7 @@
     padding: 10%;
     background-color: #ececec ;
 }
+
 #Logo img{
     width:100% ;
     padding-top: 2%;
@@ -45,11 +42,19 @@
 #paises{
     background-color: #ececec;
 }
+#inicial{
+    background-color: #FAFAFA;
+}
 .ui.button{
     border-radius: 20px;
 
 }
-
+.espaco{
+    padding-top: 0.5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 0.5%;
+}
 .ui.header{
     text-align: center;
 }
@@ -61,6 +66,9 @@
 .ui.container{
     text-align: center;
 }
+.principal{
+    background-color: black;
+}
 .imagem{
 
     width: 100%;
@@ -69,16 +77,18 @@
     background-attachment: fixed;
 }
 .opaco{
-    opacity: 0.93;
-    margin-top:40%;
+    opacity: 0.90;
 }
 .bloco{
     margin-left: 33%;
 }
+
 .corb{
     color: #fff;
 }
-
+.corp{
+    color: black;
+}
 .imagem_header{
     background-image:url(../img/avi.jpg) !important;
 }
@@ -86,13 +96,26 @@
 .superior{
     position: relative;
 }
+.textosup{
+    font-family: "American Typewriter";
+    font-size: 250%;
+    margin-bottom: 3%;
 
-
+}
+.textoinf{
+    font-family: "American Typewriter";
+    font-size: 110%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
 .sobrepor{
     position: absolute;
-    top:25%;
+    top:30%;
     width: 100%;
 
+}
+.perfil{
+    margin-bottom: 20%;
 }
 .alinhamentol{
     margin-left:20% ;
@@ -100,10 +123,19 @@
 
 }
 .alinhamentoC{
-    margin-left: 8%;
+    margin-left: 20%;
 }
 .alinhamentoR{
     margin-top: -1%;
+}
+.alinharPerfil{
+    top: 150;
+}
+.alinharCadL{
+    top: 140;
+}
+.margemCad{
+    margin-bottom: 20%;
 }
 .emcima{
     position: relative;
@@ -176,6 +208,20 @@
 .margem{
     margin-left: 5%;
 }
+.margemLocal{
+    margin-left: 25%;
+    margin-top: 5%;
+}
+.lugar{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.botao{
+    margin-top: 10%;
+}
+.distancia{
+    margin-left: 50%;
+}
 
 
 /*responsividade*/
@@ -195,4 +241,10 @@
         padding-bottom: 7%;
     }
 }
+
+
+
+
+
+
 

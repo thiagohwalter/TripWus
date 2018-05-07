@@ -23,61 +23,74 @@
 
 <!--Barra do topo la em cima -->
 
-<nav id="Topo">
-    <div class="ui secondary pointing big menu corb">
-
-        <div id="Logo" class="ui-text topo">
-
-            <a href="index.html">
-                <img src="../../assets/img/logo.png">
-            </a>
-
-        </div>
-
-        <div class="right menu">
-            <a class="ui item" href="cadastro.html">
-                <p class="corb">Cadastrar</p>
-            </a>
-            <a class="ui item" href="login.html">
-                <p class="corb">Entrar</p>
-            </a>
-        </div>
-    </div>
-
-</nav>
+<?php include ("adm/topo.php")?>
 
 <section id="paises">
 
+    <div>
+        <img class="imagem" src="../../assets/img/america.jpg">
+    </div>
 
-    <img class="imagem" src="../../assets/img/oceania.jpg">
 
     <div class="ui stackable grid">
         <div class="ui four wide column"></div>
         <div class="ui four wide column">
             <div class="ui segment">
-                <p class="texto">
-                    O continente asiático concentra as suas terras especialmente no hemisfério norte (ou seja, nas áreas
-                    setentrional e oriental).
-                    Seja em população ou em área, a Ásia se destaca como o maior entre os continentes.Devido a sua
-                    extensão, as diferenças climáticas
-                    no continente asiático também são bem expressivas. Clima siberiano, Clima de monções, Clima
-                    Mediterrâneo, Clima desértico.
-                    Os países com economia melhor desenvolvida no continente asiático são: Índia, Japão e China. O Japão
-                    é o país de economia mais bem
-                    consolidada (sendo esta industrializada desde a 2ª Guerra Mundial) enquanto a China é dona do
-                    segundo maior PIB do mundo.
+                <p class="texto">O continente americo centetrional, possui um vasto leque de pontos turisticos, hoteis,
+                    entre outros serviços
+                    turisticos. No Alaska, o ponto que mais tem um foco estrelado é o qusito da gastranomia. Já no
+                    Canadá, a rede
+                    de hotelaria é conhecida pela sua excelência e zelo pelo cliente, e também, denotam de um alto nível
+                    de
+                    avaliação do seu hospedado. E nos Estados Unidos, o extremo forte, são os pontos turísticos. Também
+                    na sudeste
+                    do país, se encontra o tão famoso parque de diversão do mundo, o Walt Disney World.
                 </p>
             </div>
         </div>
         <div class="ui four wide column">
             <div class="ui segment">
-                <img class="imagem" src="../../assets/img/china.jpg">
+                <img class="imagem" src="../../assets/img/disney.jpg">
                 <div class="ui divider"></div>
-                <h3 class="textoalin">Cidade Proibida - Pequim - China</h3>
+                <h3 class="textoalin">Walt Disney Wolrd - Florida</h3>
             </div>
         </div>
         <div class="ui four wide column"></div>
     </div>
+
+
+    <div>
+        <img class="imagem" src="../../assets/img/americac.jpg">
+    </div>
+
+
+    <div class="ui stackable grid">
+
+        <div class="ui four wide column"></div>
+        <div class="ui four wide column">
+            <div class="ui segment">
+                <img class="imagem" src="../../assets/img/cancun.jpg">
+                <div class="ui divider"></div>
+                <h3 class="textoalin">Museu Submarino - Cancun - México</h3>
+            </div>
+        </div>
+        <div class="ui four wide column">
+            <div class="ui segment">
+                <p class="texto">
+                    A América Central é a parte do continente na qual a concentração de beleza natural se encontra numa
+                    homogeniedade
+                    com os grandes centros urbanos. A parte mais ao norte possuem desertos que fazem fronteiras com os
+                    Estados Unidos
+
+                </p>
+            </div>
+        </div>
+        <div class="ui four wide column"></div>
+
+
+    </div>
+
+
     <br>
     <br>
     <br>
@@ -207,22 +220,7 @@
 </section>
 
 
-<section id="Rodape" class="ui section corb">
-    <div class="ui container">
-
-        <section class="ui section">
-            <h2>Dúvidas, Reclamações ou Sugestões</h2>
-            <div class="ui divider"></div>
-            <p>Para uma experiência de maior qualiade, reporte-nos qualquer problema, duvida ou sugestão</p>
-
-            <p><a class="corb" href="https://goo.gl/CfvNFW">contato.tw@tripwus.com</a></p>
-
-
-            <i class="huge mail icon"></i>
-        </section>
-
-    </div>
-</section>
+<?php include ("adm/rodape.php")?>
 
 
 </body>

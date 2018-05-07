@@ -24,61 +24,36 @@
 
 <!--Barra do topo la em cima -->
 
-<nav id="Topo">
-    <div class="ui secondary pointing big menu corb">
-
-        <div id="Logo" class="ui-text topo">
-
-            <a href="index.html">
-                <img src="../../assets/img/logo.png">
-            </a>
-
-        </div>
-
-        <div class="right menu">
-            <a class="ui item" href="cadastro.html">
-                <p class="corb">Cadastrar</p>
-            </a>
-            <a class="ui item" href="login.html">
-                <p class="corb">Entrar</p>
-            </a>
-        </div>
-    </div>
-
-</nav>
+<?php include ("adm/topo.php")?>
 
 <section id="paises">
 
-    <img class="imagem" src="../../assets/img/europa.jpg">
+
+    <img class="imagem" src="../../assets/img/africa.jpg">
+
 
     <div class="ui stackable grid">
         <div class="ui four wide column"></div>
         <div class="ui four wide column">
             <div class="ui segment">
-                <img class="imagem" src="../../assets/img/par.jpg">
+                <img class="imagem" src="../../assets/img/pira.jpg">
                 <div class="ui divider"></div>
-                <h3 class="textoalin">Torre Eiffel - Paris - França</h3>
+                <h3 class="textoalin">Necrópole de Gizé - Egito - África</h3>
             </div>
         </div>
         <div class="ui four wide column">
             <div class="ui segment">
                 <p class="texto">
-                    O continente europeu possui uma grande abrangências em pontos turísticos, hotlaria e uma extrema
-                    heteronomia
-                    no quisito da gastronomia e em todos os outros tópicos citados. O continente denota de uma riqueza
-                    cultural
-                    extremamente marcante, possuindo uma dicotomia muito acentuada. No extremo norte do continente o
-                    clima é
-                    quase polar, ja no extremo sul, ele é mediterrâneo continental, possuindo sua vegetação, de acordo
-                    com a
-                    região e o clima que o possuem. No oeste do continente o clima é continental e no leste é frio de
-                    montanha.
-                    Portanto, o continente possue extremos muito acentuados que fazem com que o mesmo denote de uma
-                    riqueza extremamente
-                    alta. Todos esses aspectos tornam esse continente um alvo mais almejado dos viajantes, pois ele
-                    contém vários
-                    pontos que podem agradar qualquer tipo de turista.
-
+                    O continente africano conta com 54 países independentes e é o segundo país mais populoso da terra,
+                    possuindo cerca de um sétimo da população de todo o planeta. É também o terceiro continente de maior
+                    extensão da Terra.
+                    Os países mais desenvolvidos da região são a África do Sul, Egito, Marrocos, Argélia, Tunísia e
+                    Líbia.O clima do continente africano é constituído
+                    pelo, equatorial, desértico, mediterrâneo e tropical. A maior parte da África é constituída pelos
+                    negros. Os brancos estão na porção setentrional,
+                    que por isso é chamada África Branca. Os brancos são principalmente árabes e berberes.
+                    As religiões mais presentes são a muçulmana e a católica romana, além de outros ritos africanos.
+                    Fala-se principalmente o inglês, francês, árabe, português, além de outras línguas africanas.
                 </p>
             </div>
         </div>
@@ -214,23 +189,7 @@
 </section>
 
 
-<section id="Rodape" class="ui section corb">
-    <div class="ui container">
-
-        <section class="ui section">
-
-            <h2>Dúvidas, Reclamações ou Sugestões</h2>
-            <div class="ui divider"></div>
-            <p>Para uma experiência de maior qualiade, reporte-nos qualquer problema, duvida ou sugestão</p>
-
-            <p><a class="corb" href="https://goo.gl/CfvNFW">contato.tw@tripwus.com</a></p>
-
-
-            <i class="huge mail icon"></i>
-        </section>
-
-    </div>
-</section>
+<?php include ("adm/rodape.php")?>
 
 
 </body>

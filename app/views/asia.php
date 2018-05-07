@@ -9,7 +9,7 @@
 
     <title>TripWus</title>
 
-    <!-- Links do site inteiro-->
+    <!-- Css do site inteiro-->
 
     <link rel="shortcut icon" type="img/x-png" href="../../assets/img/logo-top.png">
     <link rel="stylesheet" type="text/css" href="../../assets/vendor/semantic/semantic.css">
@@ -23,152 +23,52 @@
 
 
 <!--Barra do topo la em cima -->
-<nav id="Topo">
-    <div class="ui secondary pointing big menu">
 
-        <div id="Logo" class="ui-text topo">
+<?php include ("adm/topo.php")?>
 
-            <a href="index.html">
-                <img src="../../assets/img/logo.png">
-            </a>
+<section id="paises">
+
+    <img class="imagem" src="../../assets/img/asia.jpg">
 
 
-        </div>
-
-        <div class="right menu">
-            <a class="ui item" href="cadastro.html">
-                <p class="corb">Cadastrar</p>
-            </a>
-            <a class="ui item" href="login.html">
-                <p class="corb">Entrar</p>
-            </a>
-        </div>
-    </div>
-
-</nav>
-
-
-<!-- Avião -->
-
-<header id="Avi">
     <div class="ui stackable grid">
-        <div id="texto" class="ui sizer vertical segment superior">
-
-            <img class="imagem" src="../../assets/img/avi.jpg">
-            <section class="sobrepor">
-                <div class="ui header titulo">
-                    <h1>O melhor para sua viagem</h1>
-
-                    <div class="ui divider"></div>
-
-                    <p>Milhares de destinos e avaliações em um só lugar</p>
-
-                    <button class="big ui button">
-                        <a href="cadastro.html">Junte-se a nós</a>
-                    </button>
-                </div>
-            </section>
-        </div>
-    </div>
-</header>
-
-
-<!-- Menu -->
-
-<section id="Menu">
-
-    <div class="ui menu">
-
-        <div class="ui stackable equal width sem_margem grid">
-            <div class="column emcima">
-                <img src="../../assets/img/1.jpg" class="ui image embaixo">
-
-                <div class="item sobreposto">
-                    <a href="america.html">
-                        <p>AMÉRICA</p>
-                    </a>
-                </div>
-            </div>
-            <div class="column emcima">
-                <img src="../../assets/img/2.jpg" class="ui image">
-
-                <div class="item sobreposto">
-                    <a href="europa.html">
-                        <p>EUROPA</p>
-                    </a>
-                </div>
-
-            </div>
-            <div class="column emcima">
-                <img src="../../assets/img/3.jpg" class="ui image">
-
-                <div class="item sobreposto">
-                    <a href="asia.html">
-                        <p>ÁSIA</p>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="equal width row">
-                <div class="column emcima">
-                    <img src="../../assets/img/4.jpg" class="ui image">
-
-                    <div class="item sobreposto">
-                        <a href="africa.html">
-                            <p>ÁFRICA</p>
-                        </a>
-                    </div>
-
-                </div>
-                <div class="column emcima">
-                    <img src="../../assets/img/5.jpg" class="ui image">
-
-                    <div class="item sobreposto">
-                        <a href="oceania.html">
-                            <p>OCEANIA</p>
-                        </a>
-                    </div>
-
-                </div>
-                <div class="column emcima">
-                    <img src="../../assets/img/6.jpg" class="ui image">
-
-                    <div class="item sobreposto">
-                        <a href="antartida.html">
-                            <p>ANTÁRTIDA</p>
-                        </a>
-                    </div>
-
-                </div>
+        <div class="ui four wide column"></div>
+        <div class="ui four wide column">
+            <div class="ui segment">
+                <p class="texto">
+                    O continente asiático concentra as suas terras especialmente no hemisfério norte (ou seja, nas áreas
+                    setentrional e oriental).
+                    Seja em população ou em área, a Ásia se destaca como o maior entre os continentes.Devido a sua
+                    extensão, as diferenças climáticas
+                    no continente asiático também são bem expressivas. Clima siberiano, Clima de monções, Clima
+                    Mediterrâneo, Clima desértico.
+                    Os países com economia melhor desenvolvida no continente asiático são: Índia, Japão e China. O Japão
+                    é o país de economia mais bem
+                    consolidada (sendo esta industrializada desde a 2ª Guerra Mundial) enquanto a China é dona do
+                    segundo maior PIB do mundo.
+                </p>
             </div>
         </div>
-
-
-    </div>
-
-</section>
-
-<!-- barra 10 melhores -->
-
-<aside id="Barra">
-    <div class="ui stackable grid">
-        <div class="ui container fluid">
-            <div class="ui header">
-                <p>Veja as melhores avaliações da semana</p>
-                <button class="medium ui button">
-                    <a href="top.html">Veja aqui</a>
-                </button>
+        <div class="ui four wide column">
+            <div class="ui segment">
+                <img class="imagem" src="../../assets/img/china.jpg">
+                <div class="ui divider"></div>
+                <h3 class="textoalin">Cidade Proibida - Pequim - China</h3>
             </div>
         </div>
+        <div class="ui four wide column"></div>
     </div>
-</aside>
 
-
-<!-- Principal, o que vai ser mostrado após o menu -->
-
-<section id="inicial">
+    <br>
+    <br>
+    <br>
+    <div class="ui divider"></div>
+    <br>
+    <br>
+    <br>
     <div class="caixa">
+
+
         <div class="ui stackable grid">
             <div class="ui column"></div>
             <div class="ui fourteen wide column">
@@ -178,7 +78,6 @@
                             <h3 class="header textoalin">Gastronomia</h3>
                             <div class="ui divider"></div>
                             <div class="alinhamentoC">
-                                <?php foreach($listaProdutos as $prod): ?>
                                 <div class="ui card">
                                     <div class="content">
                                         <div class="right floated meta">14h</div>
@@ -207,7 +106,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <?php endforeach; ?>
                             </div>
                         </section>
                     </div>
@@ -216,7 +114,6 @@
                             <h3 class="header textoalin">Hotelaria</h3>
                             <div class="ui divider"></div>
                             <div class="alinhamentoC">
-                                <?php foreach($listaProdutos as $prod): ?>
                                 <div class="ui card">
                                     <div class="content">
                                         <div class="right floated meta">4h</div>
@@ -243,7 +140,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <?php endforeach; ?>
+
                             </div>
 
                         </section>
@@ -253,7 +150,6 @@
                             <h3 class="header textoalin">Pontos turísticos</h3>
                             <div class="ui divider"></div>
                             <div class="alinhamentoC">
-                                <?php foreach($listaProdutos as $prod): ?>
                                 <div class="ui card">
                                     <div class="content">
                                         <div class="right floated meta">1 Dia</div>
@@ -280,7 +176,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <?php endforeach; ?>
                             </div>
                         </section>
                     </div>
@@ -289,28 +184,10 @@
         </div>
     </div>
 
+
 </section>
 
-
-<section id="Rodape" class="ui section">
-    <div class="ui container">
-
-        <section class="ui corb section">
-
-            <h2>Dúvidas, Reclamações ou Sugestões</h2>
-            <div class="ui divider"></div>
-            <p>Para uma experiência de maior qualiade, reporte-nos qualquer problema, duvida ou sugestão</p>
-
-            <p>
-                <a class="corb" href="https://goo.gl/CfvNFW">contato.tw@tripwus.com</a>
-            </p>
-
-            <i class="huge mail icon"></i>
-        </section>
-
-    </div>
-</section>
-
+<?php include ("adm/rodape.php")?>
 
 </body>
 

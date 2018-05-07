@@ -4,32 +4,31 @@ require_once "Conexao.php";
 
 class Usuario
 {
-
-    public $codigo;
+    public $id;
+    public $email;
+    public $dt_nasc;
     public $nome;
     public $sobrenome;
-    public $usuario;
-    public $tipo_usuario;
+    public $senha;
 
-    //Crie um Produto com estes dados
-    public function __construct($codigo = null, $nome, $preco, $categoria, $quantidade_estoque)
+
+
+    //Crie um usuario
+    public function __construct($email, $dt_nasc, $nome, $sobrenome, $senha)
     {
-        $this->codigo = $codigo;
+        $this->id = null;
+        $this->email = $email;
+        $this->dt_nasc = $dt_nasc;
         $this->nome = $nome;
-        $this->sobrenome = $preco;
-        $this->usuario = $categoria;
-        $this->tipo_usuario = $quantidade_estoque;
+        $this->sobrenome =$sobrenome;
+        $this->senha = $senha;
     }
 
-    //Função para verificar a quantidade em estoque do Produto em questão/
     public function getDisponibilidade()
     {
 
-        //Se a quantidade em estoque for maior que 0
-        if ($this->usuario =! $this->usuario) {
-            //Me retorne Disponível
-            return "Nome de usuario disponivel";
-            //Caso contrário, me retorne indisponível
+        if ($this->email =! $this->email) {
+            return "Nome de  disponivel";
         } else {
             return "Indisponível";
 

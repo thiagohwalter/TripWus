@@ -25,7 +25,7 @@ class CrudProdutos
     public function salvar(Usuario $produto)
     {
         //Após receber o Produto produto, realize a conexão e insira no banco estes dados
-        $this->conexao->exec("INSERT INTO tb_produtos (nome, categoria, preco, quantidade_estoque) VALUES ('$produto->nome', '$produto->usuario', '$produto->sobrenome', '$produto->tipo_usuario')");
+        $this->conexao->exec("INSERT INTO tb_produtos (nome, categoria, preco, quantidade_estoque) VALUES ('$produto->nome', '$produto->email', '$produto->sobrenome', '$produto->sobrenome')");
     }
 
     //Função para realizar a busca de um produto
@@ -109,3 +109,86 @@ class CrudProdutos
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//quando um valor da URL for igual a editar faça isso
+if ($acao == 'editar') {
+    //Recebe os valores do formulário
+    $id = $_POST['id'];
+    $nome = $_POST['nome'];
+    $usuario = $_POST['categoria'];
+    $sobrenome = $_POST['preco'];
+    $tipo_usuario = $_POST['quantidade_estoque'];
+
+    /*   algoritmo para editar */
+    //Criar um CRUD para para usar os métodos para o meu Produto
+    $crud = new CrudProdutos();
+    //Edite o Produto.
+    $crud->editarProduto($id, $nome, $usuario, $sobrenome, $tipo_usuario);
+
+    /*redirecione para a página de produtos*/
+
+}
+
+
+//quando um valor da URL for igual a excluir faça isso
+//    algoritmo para excluir
+
+if ($acao == 'excluir') {
+    //Pegue o ID do Produto que quero excluir
+    $id = $_GET['id'];
+    //Crio um CRUD para poder realizar os métodos
+    $crud = new CrudProdutos();
+    //Deleto o produto de acordo com o ID
+    $crud->deletarProduto($id);
+    //redirecione para a página de produtos
+    header("Location: ../../adm.php");
+}
+
+//quando um valor da URL for igual a comprar faça isso
+
+//algoritmo para dimin

@@ -9,10 +9,14 @@
 
     <title>TripWus</title>
 
-    <!-- Css do site inteiro-->
+    <!-- Links do site inteiro-->
+
     <link rel="shortcut icon" type="img/x-png" href="../../assets/img/logo-top.png">
     <link rel="stylesheet" type="text/css" href="../../assets/vendor/semantic/semantic.css">
     <link rel="stylesheet" type="text/css" href="../../assets/css/estilo.css">
+    <link rel="stylesheet" type="text/js" href="../../assets/vendor/jquery/jquery.js">
+    <link rel="stylesheet" type="text/js" href="../../assets/vendor/semantic/semantic.js">
+    <link rel="stylesheet" type="text/js" href="../../assets/vendor/semantic/components/dropdown.js">
     <link rel="stylesheet" type="text/js" href="../../assets/js/script.js">
 
 
@@ -23,105 +27,139 @@
 
 <!--Barra do topo la em cima -->
 
-<nav id="Topo">
-    <div class="ui secondary pointing big menu">
+<?php include ("adm/topo.php")?>
 
-        <div id="Logo" class="ui-text topo">
+<!-- Avião -->
 
-            <a href="index.html">
-                <img src="../../assets/img/logo.png">
-            </a>
-
-        </div>
-
-        <div class="right menu">
-            <a class="ui item" href="cadastro.html">
-                <p class="corb">Cadastrar</p>
-            </a>
-            <a class="ui item" href="login.html">
-                <p class="corb">Entrar</p>
-            </a>
-        </div>
-    </div>
-
-</nav>
-
-<section id="paises">
-
-    <div>
-        <img class="imagem" src="../../assets/img/america.jpg">
-    </div>
-
-
+<header id="Avi">
     <div class="ui stackable grid">
-        <div class="ui four wide column"></div>
-        <div class="ui four wide column">
-            <div class="ui segment">
-                <p class="texto">O continente americo centetrional, possui um vasto leque de pontos turisticos, hoteis,
-                    entre outros serviços
-                    turisticos. No Alaska, o ponto que mais tem um foco estrelado é o qusito da gastranomia. Já no
-                    Canadá, a rede
-                    de hotelaria é conhecida pela sua excelência e zelo pelo cliente, e também, denotam de um alto nível
-                    de
-                    avaliação do seu hospedado. E nos Estados Unidos, o extremo forte, são os pontos turísticos. Também
-                    na sudeste
-                    do país, se encontra o tão famoso parque de diversão do mundo, o Walt Disney World.
-                </p>
+        <div id="texto" class="ui sizer vertical segment superior">
+
+            <img class="imagem" src="../../assets/img/avi.jpg">
+            <section class="sobrepor">
+                <div class="ui header titulo">
+                    <h1 class="textosup">O melhor para sua viagem</h1>
+
+                    <div class="ui divider"></div>
+
+                    <p class="textoinf">Milhares de destinos e avaliações em um só lugar</p>
+
+                    <?php
+                    if(isset($_SESSION['nome'])) {
+                        echo ('');
+                    }
+                    else{
+                        echo('<button class="big ui button">
+                        <a href="cadastro.php">
+                            <p class="corp textob">Junte-se a nós</p>
+                        </a>
+                    </button>');
+                    }
+
+                    ?>
+                </div>
+            </section>
+        </div>
+    </div>
+</header>
+
+
+<!-- Menu -->
+
+<section id="Menu">
+
+    <div class="ui menu">
+
+        <div class="ui stackable equal width sem_margem grid">
+            <div class="column emcima">
+                <img src="../../assets/img/1.jpg" class="ui image embaixo">
+
+                <div class="item sobreposto">
+                    <a href="america.php">
+                        <p>AMÉRICA</p>
+                    </a>
+                </div>
+            </div>
+            <div class="column emcima">
+                <img src="../../assets/img/2.jpg" class="ui image">
+
+                <div class="item sobreposto">
+                    <a href="europa.php">
+                        <p>EUROPA</p>
+                    </a>
+                </div>
+
+            </div>
+            <div class="column emcima">
+                <img src="../../assets/img/3.jpg" class="ui image">
+
+                <div class="item sobreposto">
+                    <a href="asia.php">
+                        <p>ÁSIA</p>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="equal width row">
+                <div class="column emcima">
+                    <img src="../../assets/img/4.jpg" class="ui image">
+
+                    <div class="item sobreposto">
+                        <a href="africa.php">
+                            <p>ÁFRICA</p>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="column emcima">
+                    <img src="../../assets/img/5.jpg" class="ui image">
+
+                    <div class="item sobreposto">
+                        <a href="oceania.php">
+                            <p>OCEANIA</p>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="column emcima">
+                    <img src="../../assets/img/6.jpg" class="ui image">
+
+                    <div class="item sobreposto">
+                        <a href="antartida.php">
+                            <p>ANTÁRTIDA</p>
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </div>
-        <div class="ui four wide column">
-            <div class="ui segment">
-                <img class="imagem" src="../../assets/img/disney.jpg">
-                <div class="ui divider"></div>
-                <h3 class="textoalin">Walt Disney Wolrd - Florida</h3>
-            </div>
-        </div>
-        <div class="ui four wide column"></div>
+
+
     </div>
 
+</section>
 
-    <div>
-        <img class="imagem" src="../../assets/img/americac.jpg">
-    </div>
+<!-- barra 10 melhores -->
 
-
+<aside id="Barra">
     <div class="ui stackable grid">
-
-        <div class="ui four wide column"></div>
-        <div class="ui four wide column">
-            <div class="ui segment">
-                <img class="imagem" src="../../assets/img/cancun.jpg">
-                <div class="ui divider"></div>
-                <h3 class="textoalin">Museu Submarino - Cancun - México</h3>
+        <div class="ui container fluid">
+            <div class="ui header">
+                <p>Veja as melhores avaliações da semana</p>
+                <button class="medium ui button">
+                    <a href="top.php">Veja aqui</a>
+                </button>
             </div>
         </div>
-        <div class="ui four wide column">
-            <div class="ui segment">
-                <p class="texto">
-                    A América Central é a parte do continente na qual a concentração de beleza natural se encontra numa
-                    homogeniedade
-                    com os grandes centros urbanos. A parte mais ao norte possuem desertos que fazem fronteiras com os
-                    Estados Unidos
-
-                </p>
-            </div>
-        </div>
-        <div class="ui four wide column"></div>
-
-
     </div>
+</aside>
 
 
-    <br>
-    <br>
-    <br>
-    <div class="ui divider"></div>
-    <br>
-    <br>
-    <br>
+<!-- Principal, o que vai ser mostrado após o menu -->
+
+<section id="inicial">
     <div class="caixa">
-
-
         <div class="ui stackable grid">
             <div class="ui column"></div>
             <div class="ui fourteen wide column">
@@ -131,6 +169,7 @@
                             <h3 class="header textoalin">Gastronomia</h3>
                             <div class="ui divider"></div>
                             <div class="alinhamentoC">
+
                                 <div class="ui card">
                                     <div class="content">
                                         <div class="right floated meta">14h</div>
@@ -159,6 +198,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </section>
                     </div>
@@ -167,6 +207,7 @@
                             <h3 class="header textoalin">Hotelaria</h3>
                             <div class="ui divider"></div>
                             <div class="alinhamentoC">
+
                                 <div class="ui card">
                                     <div class="content">
                                         <div class="right floated meta">4h</div>
@@ -203,6 +244,7 @@
                             <h3 class="header textoalin">Pontos turísticos</h3>
                             <div class="ui divider"></div>
                             <div class="alinhamentoC">
+
                                 <div class="ui card">
                                     <div class="content">
                                         <div class="right floated meta">1 Dia</div>
@@ -229,6 +271,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </section>
                     </div>
@@ -237,29 +280,15 @@
         </div>
     </div>
 
-
 </section>
 
 
-<section id="Rodape" class="ui section corb">
-    <div class="ui container">
-
-        <section class="ui section">
-
-            <h2>Dúvidas, Reclamações ou Sugestões</h2>
-            <div class="ui divider"></div>
-            <p>Para uma experiência de maior qualiade, reporte-nos qualquer problema, duvida ou sugestão</p>
-
-            <p><a class="corb" href="https://goo.gl/CfvNFW">contato.tw@tripwus.com</a></p>
-
-
-            <i class="huge mail icon"></i>
-        </section>
-
-    </div>
-</section>
+<?php include ("adm/rodape.php")?>
 
 
 </body>
 
 </html>
+
+
+

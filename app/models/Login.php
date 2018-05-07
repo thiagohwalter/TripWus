@@ -16,44 +16,39 @@ class Login
 
     public function __construct()
     {
-        //Realize a conxão com o banco de dados
         $this->conexao = Conexao::getConexao();
     }
-    //Função para realizar o Logout
+
     public function sair(){
-        //Ao chamar a função sair através de um link, encaminho para esta página
-        header("Location: ../views/index.html");
-        //E destruo a sessão realizada antes
         session_destroy();
+        header("Location: ../views/index.php");
     }
-    //Função para realizar Login
+
     public function logar($nome_Usuario, $senha_Usuario)
     {
-        //Através do formulário, recebo um nome de usuário e uma senha. Crio um CRUD do Usuario para utilizar os métodos
         $consulta = new CrudUsuario();
-        //Verifico se este login existe
         $usuario = $consulta->loginExiste($nome_Usuario, $senha_Usuario);
-        //E se o usuário existe, ele me retornará estes dados
+
         if ($usuario != null) {
 
+            $_SESSION['id'] = $usuario->id;
             $_SESSION['nome'] = $usuario->nome;
-            $_SESSION['id'] = $usuario->id_usuario;
-            $_SESSION['is_logado'] = true;
+            $_SESSION['email'] = $usuario->email;
+            $_SESSION['senha'] = $usuario->senha;
 
-            header("Location: ../views/upagem.html");
-            //Caso os dados não existirem, redirecione o usuário para a página inicial
+            header("Location: ../views/index.php");
         } else {
 
-            header("Location: login.html?msg=login ou senha incorretos");
+            header("Location: ../views/login.php?msg=login ou senha incorretos");
         }
     }
-    //Função para verificar o login
+
     public static function verificarLogin()
     {
         //Se a variável não Sessão existe
         if(!isset($_SESSION["is_logado"])){
             //Retorne o uusário para a página de login
-            header("Location: login.html");
+            header("Location: login.php");
         }
     }
 
